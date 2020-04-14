@@ -1,6 +1,9 @@
 package com.utn.spring.model;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
@@ -10,6 +13,9 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
 public class Person {
 
     @Id
@@ -20,7 +26,15 @@ public class Person {
     private String name;
     @NotNull
     private String lastName;
+    @NotNull
+    private Integer age;
 
- 
-    
+
+
+    public Person setName (String name){
+        this.name = name;
+        return this;
+    }
+
+
 }

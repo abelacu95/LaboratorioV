@@ -21,16 +21,30 @@ public class PesonController {
     }
 
     @GetMapping("/")
-    public List<Person> getPerson(){
+    public List<Person> getAll(){
         return personService.getPerson();
-
     }
 
+    @GetMapping("/{personId}")
+    public Person getPersonById(@PathVariable Integer personId){
+        return personService.getById(personId);
+    }
+
+
+    @GetMapping("/")
+    public List<Person> getPersonByAge(@RequestParam Integer age){
+        return personService.getPersonByAge(age);
+    }
 
     @PostMapping("/")
     public void addPersona( @RequestBody @Valid Person person){
+
+        Person p = new Person();
+        p.setLastName("nombre");
+
+        Person p2 = Person.builder().name("nombre").lastName("apellido").build();
+
         personService.add(person);
     }
-
 
 }
