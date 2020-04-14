@@ -3,12 +3,12 @@
 _Sistema Productor/Consumidor_
 
 ### Consumidores
-_Se necesitan 3 Threads Consumidores para que el stock llegue a 0._
+_Se necesitan 3 Consumidores para que el stock llegue a 0._
 
 
 ### Synchronized  
 
-_los metodos synchronized se utilizan para que 2 o mas 
+_Los metodos synchronized se utilizan para que 2 o mas 
 threads no accedan al mismo tiempo al area de datos donde se esta trabajando.._
 
 ### Recurso Compartido 
