@@ -22,7 +22,7 @@ será capaz de ejecutar la sección crítica del código, que es la sección don
 al recurso compartido o se modifica el mismo._
 
 
-### 2 Formas de instanciar un Thread 
+### 3 Formas de instanciar un Thread 
 
 _- Si la clase declarada no tiene que ser subclase de otra superclase , se declara como subclase de Thread._
 ```
@@ -34,6 +34,9 @@ _- Si la clase declarada es una subclase de otra superclase , se declara la inte
 Ejemplo :  class Student extends Person implements Runnable {...}
 ```
 
-
+_- Con la palabra clave "new" tambien se instancia un thread._
+```
+Ejemplo :  Threads thread1 = new ( new MyClass() );
+```
 
 
