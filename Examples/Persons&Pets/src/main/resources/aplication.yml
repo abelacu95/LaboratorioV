@@ -1,0 +1,9 @@
+#spring:
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/spring_example
+#    username: root
+#    password:
+
+ # jpa:
+  #  hibernate:
+   #   ddl-auto: create-drop
